@@ -36,7 +36,7 @@ public class Main {
         for (int salary : salaryArray) {
             salarySum += salary;
         }
-        System.out.println("Средняя сумма трат за месяц  в день составила " + salarySum / 30 + " рублей");
+        System.out.println("Средняя сумма трат за месяц  в неделю составила " + salarySum / 4 + " рублей");
     }
 
     // Задание 4
@@ -44,14 +44,9 @@ public class Main {
     char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
 
     {
-        for (int i = 0; i < reverseFullName.length / 2; i++){
-            char temp = reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 -i];
-            reverseFullName[reverseFullName.length - 1 -i] = temp;
+        for (int i = reverseFullName.length; i != 0; i--) {
             System.out.println(reverseFullName[i]);
         }
-        System.out.println(Arrays.toString(reverseFullName));
-
 
 
     }
